@@ -33,3 +33,7 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 }
+
+function showSuccessMessage(){
+    alert("SUCCESS")
+}
