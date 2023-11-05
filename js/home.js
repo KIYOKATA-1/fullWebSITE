@@ -16,22 +16,18 @@ var x = setInterval(function(){
 },1000) 
 
 
-// Получаем ссылки на элементы
 var modal = document.getElementById('myModal');
 var btn = document.getElementById('openModalBtn');
 var span = document.getElementsByClassName('close')[0];
 
-// Открываем модальное окно при клике на кнопку
 btn.onclick = function() {
   modal.style.display = 'block';
 }
 
-// Закрываем модальное окно при клике на кнопку "Закрыть"
 span.onclick = function() {
   modal.style.display = 'none';
 }
 
-// Закрываем модальное окно при клике вне окна
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = 'none';

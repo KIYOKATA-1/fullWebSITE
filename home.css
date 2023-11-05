@@ -299,9 +299,17 @@ body{
 .info-panel button{
     align-items: center;
     margin-left: 50%;
+    color: white;
     margin-top: 20px;
     width: 200px;
-    background: linear-gradient();
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(270deg,#2f4f4f,#7dafc2);
+    transition: 0.3s ease-in;
+}
+.info-panel button:hover{
+    background: linear-gradient(270deg,#2cadad,#45caff);
+    color: black;
 }
 
 
@@ -315,7 +323,7 @@ body{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(16px);
   }
   
   .modal-content {
@@ -330,6 +338,11 @@ body{
     text-align: center;
     font-size: 2rem;
     font-family: 'Saira Condensed', sans-serif;
+  }
+  .modal-content img{
+    width: 256px;
+    height: auto;
+    margin-left: 43%;
   }
   
   .close {
