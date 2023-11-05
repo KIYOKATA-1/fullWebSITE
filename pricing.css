@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background-blend-mode: multiply;
+    background: linear-gradient(190deg,#273748,#ACB3B8);
+    background-repeat: no-repeat;   
+    height: 200vh; 
+}
+
+.navbar{
+    background: transparent;
+}
+
+.navbar-brand{
+    color: #ffffff;
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.login__btn, .signup__btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+    letter-spacing: 4px;
+    border: 2px solid white;
+    border-radius: 4px;
+    height: 30px;
+    font-family: 'Kanit', sans-serif;
+    transition: 0.3s ease-in;
+}
+.login__btn:hover{
+    color: black;
+    background: linear-gradient(315deg,#014871,#d7ede2);
+}
+.signup__btn:hover{
+    color: black;
+    background: linear-gradient(315deg,#112d60,#b6c0c5);
+}
+#dropdownMenuLink{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.dropdown-item{
+    font-size: 16px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: .3s ease-out;
+    color: #273748;
+}
+
+.dropdown-item:hover{
+    font-size: 13px;
+}
