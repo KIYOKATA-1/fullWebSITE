@@ -57,3 +57,136 @@ body{
     color: black;
     background: linear-gradient(315deg,#112d60,#b6c0c5);
 }
+
+.clock{
+    width: 100%;
+    height: 200px;
+    background: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    
+    }
+    
+    .clock span{
+        font-size: 80px;
+        width: 110px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+    }
+    
+    .clock span::after{
+        font-size: 16px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    
+    }
+    
+    #day::after{
+        content: 'Day';
+    }
+    
+    #hrs::after{
+        content: 'Hours';
+    }
+    #min::after{
+        content: 'Minutes';
+    }
+    #sec::after{
+        content: 'Seconds';
+    }
+    
+    .timer h2{
+        font-family: 'Kdam Thmor Paro', sans-serif;
+        font-size: 64px;
+        font-weight: 800;
+        -webkit-text-stroke: black 1px;
+    }
+    
+.carousel{
+    margin-top: 20px;
+}
+
+    .carousel-item{
+        height: 520px;
+        width: 400px;
+        border: 1px solid black;
+        border-radius: 12px;
+    }
+    
+    .carousel-item img{
+        width: 400px;
+        border-radius: 12px;
+    }
+    
+    .list-group{
+        font-size: 1.2rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        border: 1.5px solid black;
+    }
+    
+    .carousel-caption h1{
+        font-size: 5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: white;
+        font-family: 'Anton', sans-serif;
+        backdrop-filter: blur(8px);
+        border-radius: 6px;
+        -webkit-text-stroke: 2px black;
+    }
+    
+    .carousel-caption p{
+        font-size: 4rem; 
+        font-family: 'Shadows Into Light', cursive; 
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 2px;
+        backdrop-filter: blur(8px);
+    }
+    
+    .regist__btn{
+        text-decoration: none;
+        font-size: 13px;
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        margin-right: 20px;
+        margin-left: 20px;
+        height: 30px;
+        width: 120px;
+        text-align: center;
+        align-items: center;
+        backdrop-filter: blur(16px);
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 6px;
+        transition: all 0.3s ease;;
+    }
+    
+    .regist__btn:hover{
+        height: 40px;
+        justify-content: center;
+        text-align: center;
+        background: #788aff;
+        color: white;
+    }
+    
+    #start-btn{
+        background: white;
+        font-size: 1.3rem;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        transition: 0.3s ease-in;
+    }
+    #start-btn:hover{
+        color: white;
+        font-weight: 400;
+        background: linear-gradient(130deg, #233A4E, #9C6DB0);
+    }
