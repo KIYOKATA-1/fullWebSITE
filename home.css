@@ -1,9 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-size: cover;
     background-blend-mode: multiply;
-    background: linear-gradient(20deg,#FF2E4C,#1E2A78);
+    background: linear-gradient(190deg,#273748,#ACB3B8);
     background-repeat: no-repeat;   
-    height: 1200px; 
+    height: 200vh; 
 }
 
 .navbar{
@@ -11,14 +16,14 @@ body{
 }
 
 .navbar-brand{
-    color:#ffffff;
+    color: #ffffff;
     font-size:26px;
     font-weight:bold;
     letter-spacing: 1px;
 }
 
 .navbar-nav .nav-link{
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -29,11 +34,11 @@ body{
 
 .navbar-nav .nav-link:hover {
     text-decoration: underline;
-    color: #788aff;
+    color: #ffffff;
     font-size: 18px;
 }
 
-.login__btn, .regist__btn{
+.login__btn, .signup__btn{
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -53,7 +58,7 @@ body{
     color: black;
     background: linear-gradient(315deg,#014871,#d7ede2);
 }
-.regist__btn:hover{
+.signup__btn:hover{
     color: black;
     background: linear-gradient(315deg,#112d60,#b6c0c5);
 }
@@ -69,124 +74,267 @@ body{
     backdrop-filter: blur(40px);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     
-    }
+}
     
-    .clock span{
-        font-size: 80px;
-        width: 110px;
-        display: inline-block;
-        text-align: center;
-        position: relative;
-    }
-    
-    .clock span::after{
-        font-size: 16px;
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-    
-    }
-    
-    #day::after{
-        content: 'Day';
-    }
-    
-    #hrs::after{
-        content: 'Hours';
-    }
-    #min::after{
-        content: 'Minutes';
-    }
-    #sec::after{
-        content: 'Seconds';
-    }
-    
-    .timer h2{
-        font-family: 'Kdam Thmor Paro', sans-serif;
-        font-size: 64px;
-        font-weight: 800;
-        -webkit-text-stroke: black 1px;
-    }
-    
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#day::after{
+    content: 'Day';
+}
+
+#hrs::after{
+    content: 'Hours';
+}
+#min::after{
+    content: 'Minutes';
+}
+#sec::after{
+    content: 'Seconds';
+}
+
+.timer h2{
+    font-family: 'Kdam Thmor Paro', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    -webkit-text-stroke: black 1px;
+}
+
 .carousel{
     margin-top: 20px;
 }
 
-    .carousel-item{
-        height: 520px;
-        width: 400px;
-        border: 1px solid black;
-        border-radius: 12px;
-    }
+.carousel-item{
+    height: 520px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.carousel-item img{
+    width: 400px;
+    border-radius: 12px;
+}
+
+.list-group{
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    border: 1.5px solid black;
+    box-shadow: 0px 5px 10px rgb(255, 255, 255);
+}
+
+.carousel-caption h1{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    backdrop-filter: blur(8px);
+    border-radius: 6px;
+    -webkit-text-stroke: 2px black;
+}
     
-    .carousel-item img{
-        width: 400px;
-        border-radius: 12px;
-    }
+.carousel-caption p{
+    font-size: 4rem; 
+    font-family: 'Shadows Into Light', cursive; 
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    backdrop-filter: blur(8px);
+}
     
-    .list-group{
-        font-size: 1.2rem;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 400;
-        border: 1.5px solid black;
-    }
+.regist__btn{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(16px);
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    transition: all 0.3s ease;;
+}
     
-    .carousel-caption h1{
-        font-size: 5rem;
-        font-weight: 700;
-        margin-bottom: 20px;
-        color: white;
-        font-family: 'Anton', sans-serif;
-        backdrop-filter: blur(8px);
-        border-radius: 6px;
-        -webkit-text-stroke: 2px black;
-    }
+.regist__btn:hover{
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    background: #788aff;
+    color: white;
+}
     
-    .carousel-caption p{
-        font-size: 4rem; 
-        font-family: 'Shadows Into Light', cursive; 
-        font-weight: 600;
-        text-align: center;
-        letter-spacing: 2px;
-        backdrop-filter: blur(8px);
-    }
-    
-    .regist__btn{
-        text-decoration: none;
-        font-size: 13px;
-        font-family: 'Ubuntu', sans-serif;
-        color: white;
-        margin-right: 20px;
-        margin-left: 20px;
-        height: 30px;
-        width: 120px;
-        text-align: center;
-        align-items: center;
-        backdrop-filter: blur(16px);
-        background: transparent;
-        border: 2px solid white;
-        border-radius: 6px;
-        transition: all 0.3s ease;;
-    }
-    
-    .regist__btn:hover{
-        height: 40px;
-        justify-content: center;
-        text-align: center;
-        background: #788aff;
-        color: white;
-    }
-    
-    #start-btn{
-        background: white;
-        font-size: 1.3rem;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 600;
-        transition: 0.3s ease-in;
-    }
-    #start-btn:hover{
-        color: white;
-        font-weight: 400;
-        background: linear-gradient(130deg, #233A4E, #9C6DB0);
-    }
+#start-btn{
+    background: white;
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+#start-btn:hover{
+    color: white;
+    font-weight: 400;
+    background: linear-gradient(130deg, #233A4E, #9C6DB0);
+}
+
+
+.carousel-caption h3{
+    font-size: 4rem;
+    font-family: 'Kanit', sans-serif;
+}
+.carousel-caption h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+}
+.carousel-caption h5{
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#dropdownMenuLink{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.dropdown-item{
+    font-size: 16px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: .3s ease-out;
+    color: #273748;
+}
+
+.dropdown-item:hover{
+    font-size: 13px;
+}
+
+
+
+.container-featured {
+    display: flex;
+    margin: 50px;
+    width: 90%;
+    height: 25rem;
+    margin-top: 10%;
+    background: white;
+    border-radius: 8px;
+    color: black;
+    position: relative;
+    flex-grow: 1;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.25);
+}
+
+.container-featured .bike-image{
+    height: 25rem;
+    position: relative;
+    display: block;
+    border-radius: 8px;
+}
+
+.container-featured .info-panel{
+    margin-left: 10%;
+    text-decoration: none;
+}
+
+.info-panel h3{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info-panel h1{
+    font-size: 64px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.info-panel h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+.info-panel p{
+    font-size: 24px;
+    font-family: 'Teko', sans-serif;
+}
+
+.info-panel h3{
+    font-size: 22px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.info-panel ul li{
+    font-size: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.featured .ff {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    top: 60px;
+    font-family: 'Oswald', sans-serif;
+}
+.info-panel button{
+    align-items: center;
+    margin-left: 50%;
+    margin-top: 20px;
+    width: 200px;
+    background: linear-gradient();
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .modal-content p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Saira Condensed', sans-serif;
+  }
+  
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
