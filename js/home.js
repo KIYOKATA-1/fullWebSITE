@@ -40,24 +40,26 @@ function showSuccessMessage(){
 
 
 function validation(){
-  if(document.FormFIll.Username.value == ""){
-    document.getElementById('result').innerHTML = "Enter your username";
-    return false;
-  }
-  else if(document.FormFIll.Email.value == ""){
-    document.getElementById('result').innerHTML = "Enter your email";
-    return false;
-  }
-  else if(document.FormFIll.Password.value == ""){
-    document.getElementById('result').innerHTML = "Enter your password";
-    return false;
-  }
-  else if(document.FormFIll.Cpassword.value == ""){
-    document.getElementById('result').innerHTML = "Confirm your password";
-    return false;
-  }
-  else if(document.FormFIll.Password.value !== document.FormFIll.Cpassword.value ){
-    document.getElementById('result').innerHTML = "Passwords are not same";
-    return false;
-  }
+  if(document.FormFill.Username.value==
+    ""){
+      document.getElementById("result").innerHTML = "Enter your username";
+      return false;
+    }
+    else if(document.FormFill.Email.value == ""){
+      document.getElementById('result').innerHTML = "Enter your email";
+      return false;
+    }
+    else if(document.FormFill.Password.value == ""){
+      document.getElementById('result').innerHTML = "Enter your password";
+      return false;
+    }
+    else if(document.FormFill.Cpassword.value == ""){
+      document.getElementById('result').innerHTML = "Confirm your password";
+      return false;
+    }
+    else if(document.FormFill.Password.value !== document.FormFill.Cpassword.value){
+      document.getElementById('result').innerHTML = "Passwords are not same";
+      return false;
+    }
+
 }
