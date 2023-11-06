@@ -64,6 +64,10 @@
       </nav>
   </header>
   <main>
+    <audio id="backgroundMusic" autoplay loop>
+      <source src="Je_Te_Laisserai_Des_Mots_-_Patrick_Watson_(Slowed__Reverb).mp3" type="audio/mpeg">
+      Ваш браузер не поддерживает аудио элемент.
+    </audio>
     <div class="container-fluid">
         <div class="form-box">
         <form class="mx-auto" action="" name="FormFill" onsubmit="return validation()">
@@ -91,8 +95,11 @@
               </div>
 
               <div class="button">
-                <input type="submit" class="btnSubmit" onclick="validate()" value="Register">
+                <div id="btn-sound">
+                <source src="sound.mp3" type="audio/mpeg">
+                <input type="submit" class="btnSubmit" onclick="return validation()" value="Register">
               </div>
+            </div>
               <div class="group">
                 <span><a href=" ">Forget-Password</a></span>
                 <span><a href=" ">Login</a></span>

@@ -61,5 +61,10 @@ function validation(){
       document.getElementById('result').innerHTML = "Passwords are not same";
       return false;
     }
-
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var audio = document.getElementById("backgroundMusic");
+  audio.play();
+});
