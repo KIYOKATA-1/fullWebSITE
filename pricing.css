@@ -148,21 +148,6 @@ body{
     margin-left: -1em;
 }
 
-
-.message{
-    display: none;
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    border-radius: 6px;
-}
-
 footer{
     background-color: transparent;
     backdrop-filter: blur(16px);

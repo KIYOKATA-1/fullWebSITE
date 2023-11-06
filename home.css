@@ -252,6 +252,9 @@ body{
     display: block;
     border-radius: 8px;
 }
+.container-featured .zx-10r{
+    filter: contrast(5%);
+}
 
 .container-featured .info-panel{
     margin-left: 10%;
@@ -368,4 +371,102 @@ footer img{
 footer p{
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
+}
+
+
+
+@media (max-width: 768px) {
+    body{background: red;}
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .carousel-item {
+        height: 300px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info-panel {
+        margin-left: 5%;
+    }
+
+    .info-panel h1 {
+        font-size: 40px;
+    }
+
+    .info-panel h2 {
+        font-size: 30px;
+    }
+
+    .info-panel p {
+        font-size: 18px;
+    }
+
+    .info-panel h3 {
+        font-size: 18px;
+    }
+
+    .info-panel ul li {
+        font-size: 16px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+
+    .carousel-item {
+        height: 200px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 3rem;
+    }
+
+    .carousel-caption p {
+        font-size: 2rem;
+    }
+
+    .info-panel h1 {
+        font-size: 32px;
+    }
+
+    .info-panel h2 {
+        font-size: 24px;
+    }
+
+    .info-panel p {
+        font-size: 16px;
+    }
+
+    .info-panel h3 {
+        font-size: 16px;
+    }
+
+    .info-panel ul li {
+        font-size: 14px;
+    }
+}
+
+
+.feedback {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: 1;
+    color: white;
+    font-weight: 700;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 64px;
+    margin-top: 20px;
 }

@@ -68,3 +68,18 @@ document.addEventListener("DOMContentLoaded", function() {
   var audio = document.getElementById("backgroundMusic");
   audio.play();
 });
+
+
+function playClickSound() {
+  var clickSound = document.getElementById("clickSound");
+  clickSound.play();
+}
+
+
+function big(x){
+  x.style.filter = "contrast(1)";
+
+}
+function normal(x){
+  x.style.filter = "contrast(5%)";
+}
