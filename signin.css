@@ -1,0 +1,143 @@
+body {
+    background-color: #071014;
+    background-image: -webkit-linear-gradient(160deg, #071014 0%, #0db8de 100%);
+    background-image: -moz-linear-gradient(160deg, #071014 0%, #0db8de 100%);
+    background-image: -o-linear-gradient(160deg, #071014 0%, #0db8de 100%);
+    background-image: linear-gradient(160deg, #071014 0%, #0db8de 100%);  
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+footer{
+    background-color: transparent;
+    backdrop-filter: blur(16px);
+    color: black;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+}
+
+footer img{
+    width: 180px;
+    height: auto;
+}
+footer p{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar{
+    background: transparent;
+}
+
+.navbar-brand{
+    color: #ffffff;
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    border: 2px solid rgba(255, 255, 2550.5);
+    border-radius: 20px;
+    backdrop-filter: blur(16px);
+    display: flex;
+    justify-content: center;
+}
+
+.form-box h2{
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-box .mb-3{
+    position: relative;
+    width: 310px;
+    border-bottom:2px solid white;
+}
+
+.form-box .mb-3 input{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 25px 0 5px;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.btnSubmit{
+    color: white;
+    background: #071014;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 3px 0 10px rgb(0, 0, 0,.5);
+}
+
+i{
+    position: absolute;
+    right: 0;
+}
+i, label{
+    color: white;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+}
+.group span a{
+    color: white;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.group a:focus{
+    text-decoration: underline;
+}
+
+#result{
+    color: red;
+    font-weight: 600;
+    top: 25px;
+}

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="pricing.css">
+  <link rel="stylesheet" href="signin.css">
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -64,39 +64,42 @@
       </nav>
   </header>
   <main>
-    <div class="login-page">
-        <div class="form">
-          <form class="register-form" method="POST">
-            <h2>Register</h2>
-            <input type="text" placeholder="Full Name *" required/>
-            <input type="text" placeholder="Username *" required/>
-            <input type="email" placeholder="Email *" required/>
-            <input type="password" placeholder="Password *" required/>
-            <a class="btn" href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Create
-            </a>
-            <p class="message">Already registered? <a href="#">Sign In</a></p>
-          </form>
-          <form class="login-form" method="post">
-            <h2></i> Login</h2>
-            <input type="text" placeholder="Username" required />
-            <input type="password" placeholder="Password" required/>
-            <a class="btn" href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Sign in
-            </a>
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
+    <div class="container-fluid">
+        <div class="form-box">
+        <form class="mx-auto" action="" name="FormFill" onsubmit="return validation()">
+            <h2 class="text-center">Registration Page</h2>
+            <p id="result"></p>
+            <div class="mb-3 mt-5">
+                <i class="fa-solid fa-user""></i>
+              <label for="exampleInputName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="userName" name="Username">
+             </div>
+             <div class="mb-3 mt-5">
+                <i class="fa-regular fa-envelope""></i>
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="Email">
+               </div>
+            <div class="mb-3">
+                <i class="fa-solid fa-lock""></i>
+              <label for="exampleInputPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="Password">
+            </div>
+            <div class="mb-3">
+                <i class="fa-solid fa-lock""></i>
+                <label for="exampleInputCPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="Cpassword" name="Cpassword">
+              </div>
+
+              <div class="button">
+                <input type="submit" class="btnSubmit" onclick="validation()" value="Register">
+              </div>
+              <div class="group">
+                <span><a href=" ">Forget-Password</a></span>
+                <span><a href=" ">Login</a></span>
+              </div>
           </form>
         </div>
-      </div>
-  </main>
+  </main><br><br><br><br>
   <hr style="color: white;">
   <footer>
     <img src="img/footer.png" alt="">
@@ -111,6 +114,7 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/home.js"></script>
 </body>
 
