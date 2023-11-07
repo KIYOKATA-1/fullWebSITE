@@ -231,11 +231,19 @@ body{
 }
 
 
+.featured .ff{
+    color: white;
+    text-align: center;
+    margin-top: 25%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
 
 .container-featured {
     display: flex;
     margin: 50px;
-    width: 90%;
+    margin-left: 42%;
+    width: 18rem;
     height: 25rem;
     margin-top: 10%;
     background: white;
@@ -255,66 +263,34 @@ body{
 .container-featured .zx-10r{
     filter: contrast(5%);
 }
-
-.container-featured .info-panel{
-    margin-left: 10%;
-    text-decoration: none;
-}
-
-.info-panel h3{
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.info-panel h1{
-    font-size: 64px;
-    font-weight: 600;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.info-panel h2{
-    font-size: 40px;
-    font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-}
-.info-panel p{
-    font-size: 24px;
-    font-family: 'Teko', sans-serif;
-}
-
-.info-panel h3{
-    font-size: 22px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-.info-panel ul li{
-    font-size: 20px;
-    font-family: 'Saira Condensed', sans-serif;
-}
-.featured .ff {
-    color: white;
+.container-featured .card{
     text-align: center;
-    font-size: 4rem;
-    top: 60px;
-    font-family: 'Oswald', sans-serif;
+    border: 2px solid black;
+    box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.25);
 }
-.info-panel button{
-    align-items: center;
-    margin-left: 50%;
+#openModalBtn{
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
     color: white;
-    margin-top: 20px;
-    width: 200px;
-    font-weight: 700;
+    align-items: center;
+    background: linear-gradient(45deg, #364649,#708F96);
+    font-size: 18px;
     font-family: 'Oswald', sans-serif;
-    background: linear-gradient(270deg,#2f4f4f,#7dafc2);
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+    line-height: 16px;
     transition: 0.3s ease-in;
 }
-.info-panel button:hover{
-    background: linear-gradient(270deg,#2cadad,#45caff);
+#openModalBtn:hover{
+    transform: translateY(-10%);
     color: black;
+    background: white;
+    border: 2px solid black;
+    border-radius: 6px;
 }
-
 
 
 .modal {
@@ -469,4 +445,48 @@ footer p{
     font-family: 'Saira Condensed', sans-serif;
     font-size: 64px;
     margin-top: 20px;
+}
+
+
+.mb-3 {
+    justify-content: center;
+    text-align: center;
+
+}
+.form-label {
+    font-size: 32px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+}
+
+.mb-3 input{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    padding: 0 25px 0 5px;
+    color: white;
+    font-size: 16px;
+}
+.mb-3 input::placeholder{
+    color: white;
+    text-align: center;
+}
+
+
+.mb-3 textarea{
+    width: 100%;
+    height: 75px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    padding: 0 25px 0 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.mb-3 textarea::placeholder{
+    color: white;
+    text-align: center;
 }

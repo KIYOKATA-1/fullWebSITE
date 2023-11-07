@@ -33,7 +33,7 @@
   <header>
     <!--BS5 NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container px-4">
+        <div class="container px-4"> <!-- container-->
           <a class="navbar-brand" href="/">
             <span>LEXX</span>
           </a>
@@ -56,6 +56,7 @@
             </li>
 
             <li class="nav-item">
+              <!--DROP DOWN-->
                 <div class="dropdown">
                     <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                       Contact US
@@ -97,6 +98,9 @@
           <div class="carousel-item">
             <img src="img/carousel2.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
+
+              <!-- TIMER-->
+
                 <div class="timer">
                     <h2>LIMITED OFFER</h2>
                     <div class="clock">
@@ -141,26 +145,17 @@
         </button>
       </div>
       <br><br>
-  <section class="featured" id="featured">
+  <section class="featured" id="featured">    
     <h1 class="ff">FEATURED</h1>
     <div class="container-featured">
-        <img src="img/bike-image.png" alt="" class="bike-image">
-        <div class="info-panel">
-            <h3>2024</h3>
-            <h1>KAWASAKI</h1>
-            <h2>NINJA ZX-10R</h2>
-            <p>MSRP NON-ABS: $17,799 | MSRP ABS: $18,799</p>
-            <h3>ADDITIONAL VEHICLE FEATURES</h3>
-            <ul>
-                <li> Kawasaki Quick Shifter (KQS)</li>
-                <li> Sport-Kawasaki TRaction Control (S-KTRC)</li>
-                <li> Kawasaki Launch Control Mode (KLCM)</li>
-                <li> All LED lighting</li>
-            </ul>
-            <button type="button" class="btn btn-light" id="openModalBtn">MORE</button>
-    </div>
-    
-    <img onmouseover="big(this)" onmouseout="normal(this)" src="img/super3.png" alt="" class="zx-10r">
+      <div class="card" style="width: 18rem;">
+        <img onmouseover="big(this)" onmouseout="normal(this)" src="img/super3.png" class="zx-10r" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">KAWASAKI ZX-10R</h2>
+          <p class="card-text">MSRP NON-ABS: $17,799 | MSRP ABS: $18,799</p>
+          <a href="#" class="btn btn-primary" id="openModalBtn">MORE</a>
+        </div>
+      </div>
     </div>
   </section>
   
@@ -172,16 +167,17 @@
     </div>
     </div>
 
-    <br><br><br>
+    <br><br><hr><br>
 
     <div class="feedback">YOUR FEEDBACK</div>
-    <div class="mb-3">
+
+    <div class="mb-3 feedback">
       <label for="exampleFormControlInput1" class="form-label">Email address</label>
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Write feedbackj here</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <label for="exampleFormControlTextarea1" class="form-label">Write feedback here</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Example: My name is John. I am 25 years old. My favourite Motorocycle is ZX-10R"></textarea>
     </div>
 
     <br><br><hr style="color: black;"><br><br>
